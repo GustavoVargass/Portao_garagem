@@ -1,16 +1,12 @@
-import Main
 import serial
-
+import Main
 conexao = serial.Serial('COM3', 9600)
-
 plateImagePath = 'LicPlateImages/br2.png'
 allowedPlates = [
     'PLACA011'
-    'BEE4R22'
+    'BEE5R22'
 ]
-
 plateNumber = Main.main(plateImagePath)
-
 # O(pen) / C(lose)
 print(f'Placa lida: {plateNumber}')
 if plateNumber in str(allowedPlates):
