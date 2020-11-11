@@ -4,7 +4,7 @@ conexao = serial.Serial('COM3', 9600)
 plateImagePath = 'LicPlateImages/br2.png'
 allowedPlates = [
     'PLACA011'
-    'BEE5R22'
+    'BEE4R22'
 ]
 plateNumber = Main.main(plateImagePath)
 # O(pen) / C(lose)
